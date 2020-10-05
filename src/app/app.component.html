@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <div  class="  frame">
+    <div><ul #scrollBottom>
+  <li *ngFor="let hero of chat;let i = index" [ngClass]="{'well1': hero.id==1,'nini': hero.id==0,'well4': hero.id==3 }">
+    <div>   {{ hero.chat }}            </div>
+  </li> 
+</ul> </div> 
+
+
+
+
+
+<form  #f="ngForm" (ngSubmit)="onSubmit(f)" >
+
+  <div>
+    <div class="msj-rta macro">                        
+        <div class="text text-r" style="background:whitesmoke !important">
+            <input class="mytext " name="email"
+            [(ngModel)]="aa"  placeholder="Type a message" #serverContentInput/>
+        </div> 
+     
+       
+        <button type="submit" class="btn btn-success">Send</button>
+    </div>     
+  
+
+
+
+
+            
+  </div>
+ 
+</form> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
